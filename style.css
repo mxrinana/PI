@@ -1,64 +1,71 @@
-
 body {
-    font-family: Arial, sans-serif;
-    background: #f4f4f4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f2f5;
     margin: 0;
     padding: 0;
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     text-align: center;
 }
 
+h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #3c096c;
+}
+
 .grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 15px;
-    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.semester-column {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    flex: 1 1 200px;
+    min-width: 220px;
+}
+
+.semester-column h2 {
+    font-size: 18px;
+    color: #6a1b9a;
+    margin-bottom: 10px;
 }
 
 .subject {
-    padding: 15px;
-    border-radius: 10px;
-    color: white;
-    font-weight: bold;
-    transition: background-color 0.3s ease, text-decoration 0.3s ease;
+    padding: 12px;
+    margin: 8px 0;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
     cursor: pointer;
 }
 
 .blocked {
     background-color: #3C096C;
+    color: white;
 }
 
 .unlocked {
     background-color: #C77DFF;
+    color: white;
 }
 
 .completed {
     background-color: #EBC9FF;
+    color: #333;
     text-decoration: line-through;
 }
 
 .reset-button {
     margin-top: 30px;
     padding: 10px 20px;
-    font-size: 16px;
-    background-color: #6a1b9a;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.reset-button:hover {
-    background-color: #4a148c;
-}
-
-@media (max-width: 600px) {
-    .grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    }
-}
+    font-si
